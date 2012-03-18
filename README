@@ -1,5 +1,5 @@
 /**
- * Things - a html schema generator for semantic markup (based on Schema.org)
+ * Things - a semantic markup generator for Laravel (based on Schema.org)
  *
  * @version     0.1 (development)
  * @category    Bundle

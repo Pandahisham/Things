@@ -24,8 +24,8 @@ echo Things\Thing::make(
     ->add('description', 'A great guy', 'p')
     ->add('image', 'john.jpg', 'p')
     ->add('url', 'http://john.com', 'p')
-	->add('additionalName', 'Slowcheetah', 'p')
-	->add('email', 'test@test.com', 'p')
+    ->add('additionalName', 'Slowcheetah', 'p')
+    ->add('email', 'test@test.com', 'p')
 	// etc. etc. 
 	
 	->get();

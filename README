@@ -25,8 +25,8 @@ echo Things\Thing::make(
         'Url', // URL of the item.
         'Image') // URL of an image of the item.
 
-	->add('additionalName', 'Slowcheetah', 'p')
-	->add('email', 'test@test.com', 'p')
+	->add('additionalName', 'Slowcheetah', 'p') // property, value, tag
+	->add('email', 'test@test.com', 'p') // property, value, tag
 	// etc. etc.
 	
 	->get();

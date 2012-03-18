@@ -12,14 +12,19 @@
  *
  */
  
- EXAMPLE USAGE (http://www.schema.org/Thing for names)
+Example usage 
+- check http://www.schema.org for all properties
  
 <?php
-	echo Things\Thing::make(
-		'Person',
-		'Jeroen Gerits',
-		'This is a test entry',
-		'http://jeroengerits.nl',
-		'image.jpg')
-			->add('additionalName', 'Slowcheetah', 'p')
-			->get();
+echo Things\Thing::make(
+        'Person', // Schema (check http://www.schema.org/Thing)
+        'The name of the item.',
+        'A short description of the item.',
+        'URL of the item.',
+	    'URL of an image of the item.')
+	->add('additionalName', 'Slowcheetah', 'p')
+	->add('email', 'test@test.com', 'p')
+	// etc. etc.
+	
+	->get();
+?>

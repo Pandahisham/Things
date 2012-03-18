@@ -26,50 +26,13 @@ class Thing
 	public $schema = '';
 
 	/**
-	 * String, the tag of the Thing
+	 * String, The tag of the Thing.
 	 *
 	 * @var string
 	 */
 
-	public $tag = '';	
+	public $tag = '';
 
-	/**
-	 * String, The name of the Thing.
-	 *
-	 * @var string
-	 */
-
-	public $name = '';
-
-	/**
-	 *  String, A short description of the Thing.
-	 *
-	 * @var string
-	 */
-
-	public $description = '';
-
-	/**
-	 * String, URL of the Thing.
-	 *
-	 * @var string
-	 */
-
-	public $url = '';
-
-	/**
-	 * String, URL of an image of the Thing.
-	 *
-	 * @var string
-	 */
-
-	public $image = '';
-
-	/**
-	 * Array, list of all properties of the Thing
-	 *
-	 * @var string
-	 */
 
 	public $properties = array();
 
@@ -78,20 +41,12 @@ class Thing
 	 *
 	 * @param  string   $schema
 	 * @param  string   $tag
-	 * @param  string   $name
-	 * @param  string   $description
-	 * @param  string   $url
-	 * @param  string   $image
 	 */
 
-	function __construct($schema, $tag, $name, $description, $url, $image)
+	function __construct($schema, $tag)
 	{
 		$this->schema 		= $schema;
 		$this->tag 			= $tag;
-		$this->name 		= $name;
-		$this->description 	= $description;
-		$this->url 			= $url;
-		$this->image 		= $image;
 	}
 
 	/**
@@ -99,16 +54,12 @@ class Thing
 	 *
 	 * @param  string   $schema
 	 * @param  string   $tag
-	 * @param  string   $name
-	 * @param  string   $description
-	 * @param  string   $url
-	 * @param  string   $image
 	 * @return Thing
 	 */
 	
-	static function make($schema = '', $tag = '', $name = '', $description = '', $url = '', $image = '')
+	static function make($schema = '', $tag = '')
 	{
-		return new Thing($schema, $tag, $name, $description, $url, $image);
+		return new Thing($schema, $tag);
 	}
 
 	/**
@@ -134,10 +85,6 @@ class Thing
 		$data = array(
 			'schema' => $this->schema,
 			'tag' => $this->tag,
-			'name' => $this->name,
-			'description' => $this->description,
-			'url' => $this->url,
-			'image' => $this->image,
 			'properties' => $this->properties
 		);
 

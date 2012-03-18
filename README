@@ -16,14 +16,16 @@
 <?php
 echo Things\Thing::make(
 
-        'schema', // The schema of the Thing (http://www.schema.org/Thing)
-        'p', // The markup tag for the Thing container
+        'Person', // The schema of the Thing (http://www.schema.org/Thing)
+    )
 
-        'Name', // The name of the Thing.
-        'Description', // A short description of the Thing.
-        'Url', // URL of the Thing.
-        'Image' // URL of an image of the Thing.
-    ) 
+    // Add Thing Properties, (name, description, image, url) with the values (property, value, tag)
+    ->add('name', 'John Doe', 'p')
+    ->add('description', 'A great guy', 'p')
+    ->add('image', 'john.jpg', 'p')
+    ->add('url', 'http://john.com', 'p')
+
+    // Add Schema Properties
 	->add('additionalName', 'Slowcheetah', 'p') // property, value, tag
 	->add('email', 'test@test.com', 'p') // property, value, tag
 	// etc. etc. 
@@ -41,3 +43,9 @@ Product: http://www.schema.org/Product
 Review: http://www.schema.org/Review
 
 check http://www.schema.org for all schemas and properties
+
+
+        'Name', // The name of the Thing.
+        'Description', // A short description of the Thing.
+        'Url', // URL of the Thing.
+        'Image' // URL of an image of the Thing.

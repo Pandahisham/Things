@@ -1,6 +1,6 @@
 <?php namespace Things;
 
-use HTML, View;
+use View;
 
 /**
  * Things - a html schema generator for semantic markup (based on Schema.org)

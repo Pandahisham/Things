@@ -17,11 +17,14 @@ Example usage
  
 <?php
 echo Things\Thing::make(
-        'Person', // Schema (check http://www.schema.org/Thing)
-        'The name of the item.',
-        'A short description of the item.',
-        'URL of the item.',
-	    'URL of an image of the item.')
+
+        'Person', // The schema of the item (http://www.schema.org/Thing)
+
+        'Name', // The name of the item.
+        'Description', // A short description of the item.
+        'Url', // URL of the item.
+        'Image') // URL of an image of the item.
+
 	->add('additionalName', 'Slowcheetah', 'p')
 	->add('email', 'test@test.com', 'p')
 	// etc. etc.

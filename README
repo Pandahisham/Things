@@ -43,9 +43,3 @@ Product: http://www.schema.org/Product
 Review: http://www.schema.org/Review
 
 check http://www.schema.org for all schemas and properties
-
-
-        'Name', // The name of the Thing.
-        'Description', // A short description of the Thing.
-        'Url', // URL of the Thing.
-        'Image' // URL of an image of the Thing.

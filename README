@@ -1,0 +1,13 @@
+/**
+ * Things - a html schema generator for semantic markup (based on Schema.org)
+ *
+ * @version     0.1 (development)
+ * @category    Bundle
+ * @package     Things
+ * @author      Jeroen Gerits <me@jeroengerits.nl>
+ * @license 	MIT License <http://www.opensource.org/licenses/mit>
+ * @copyright   2012 Jeroen Gerits
+ * 
+ * @see 		https://github.com/jeroengerits/Things
+ *
+ */

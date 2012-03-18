@@ -19,13 +19,11 @@ echo Things\Thing::make(
         'Person', // The schema of the Thing (http://www.schema.org/Thing)
     )
 
-    // Add Thing Properties, with the values (property, value, tag)
+    // Add properties, with the values (property, value, tag)
     ->add('name', 'John Doe', 'p')
     ->add('description', 'A great guy', 'p')
     ->add('image', 'john.jpg', 'p')
     ->add('url', 'http://john.com', 'p')
-
-    // Add Schema Properties, with the values (property, value, tag)
 	->add('additionalName', 'Slowcheetah', 'p')
 	->add('email', 'test@test.com', 'p')
 	// etc. etc. 

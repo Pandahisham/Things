@@ -135,6 +135,31 @@ class Thing
 
 class Property
 {
+
+	/**
+	 * String, the Property
+	 *
+	 * @var string
+	 */
+
+	public $property = '';
+
+	/**
+	 * String, The value of the Property.
+	 *
+	 * @var string
+	 */
+
+	public $value = '';
+
+	/**
+	 *  String, The tag of the Property.
+	 *
+	 * @var string
+	 */
+
+	public $tag = '';
+
 	/**
 	 * Create new Property
 	 *

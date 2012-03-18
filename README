@@ -12,9 +12,7 @@
  *
  */
  
-Example usage 
-- check http://www.schema.org for all properties
- 
+Example usage: 
 <?php
 echo Things\Thing::make(
 
@@ -32,3 +30,5 @@ echo Things\Thing::make(
 	
 	->get();
 ?>
+All Properties
+check http://www.schema.org for all properties

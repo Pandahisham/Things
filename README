@@ -18,8 +18,8 @@ Example usage
 <?php
 echo Things\Thing::make(
 
-        'Person', // The schema of the item (http://www.schema.org/Thing)
-        'p', // The tag for the generated person container
+        'schema', // The schema of the item (http://www.schema.org/Thing)
+        'p', // The tag for the generated Thing container
 
         'Name', // The name of the item.
         'Description', // A short description of the item.

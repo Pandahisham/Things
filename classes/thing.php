@@ -26,6 +26,14 @@ class Thing
 	public $schema = '';
 
 	/**
+	 * String, the tag of the Thing
+	 *
+	 * @var string
+	 */
+
+	public $tag = '';	
+
+	/**
 	 * String, The name of the Thing.
 	 *
 	 * @var string

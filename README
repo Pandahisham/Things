@@ -14,21 +14,18 @@
  
 #Example usage: 
 <?php
-echo Things\Thing::make(
-
-        'Person', // The schema of the Thing (http://www.schema.org/Thing)
-    )
-
-    // Add properties, with the values (property, value, tag)
-    ->add('name', 'John Doe', 'p')
-    ->add('description', 'A great guy', 'p')
-    ->add('image', 'john.jpg', 'p')
-    ->add('url', 'http://john.com', 'p')
-    ->add('additionalName', 'Slowcheetah', 'p')
-    ->add('email', 'test@test.com', 'p')
-	// etc. etc. 
+echo Things\Thing::make('Person', 'div') // schema and tag
+        
+        // Add properties, with the values (property, value, tag)
+        ->add('name', 'John Doe', 'p')
+        ->add('description', 'A great guy', 'p')
+        ->add('image', 'john.jpg', 'p')
+        ->add('url', 'http://john.com', 'p')
+        ->add('additionalName', 'Slowcheetah', 'p')
+        ->add('email', 'test@test.com', 'p')
+    	// etc. etc. 
 	
-	->get();
+	   ->get();
 ?>
 
 #Schemas:

@@ -1,18 +1,14 @@
-/**
- * Things - a semantic markup generator for Laravel (based on Schema.org)
- *
- * @version     0.1 (development)
- * @category    Bundle
- * @package     Things
- * @author      Jeroen Gerits <me@jeroengerits.nl>
- * @license 	MIT License <http://www.opensource.org/licenses/mit>
- * @copyright   2012 Jeroen Gerits
- * 
- * @see 		https://github.com/jeroengerits/Things
- *
- */
+Things - a semantic markup generator for Laravel (based on Schema.org)
+
+@version     0.1 (development)
+@category    Bundle
+@package     Things
+@author      Jeroen Gerits <me@jeroengerits.nl>
+@license 	MIT License <http://www.opensource.org/licenses/mit>
+@copyright   2012 Jeroen Gerits
+@see 		https://github.com/jeroengerits/Things
  
-#Example usage: 
+EXAMPLE:
 <?php
 echo Things\Thing::make('Person', 'div') // schema and tag
         
@@ -25,10 +21,10 @@ echo Things\Thing::make('Person', 'div') // schema and tag
         ->add('email', 'test@test.com', 'p')
     	// etc. etc. 
 	
-	   ->get();
+        ->get(); // render html
 ?>
 
-#Schemas:
+SCHEMAS:
 Creative Work: http://www.schema.org/CreativeWork
 Event: http://www.schema.org/Event
 Organisation: http://www.schema.org/Organization

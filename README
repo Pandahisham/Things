@@ -19,12 +19,13 @@ Example usage
 echo Things\Thing::make(
 
         'Person', // The schema of the item (http://www.schema.org/Thing)
+        'p', // The tag for the generated person container
 
         'Name', // The name of the item.
         'Description', // A short description of the item.
         'Url', // URL of the item.
-        'Image') // URL of an image of the item.
-
+        'Image' // URL of an image of the item.
+    ) 
 	->add('additionalName', 'Slowcheetah', 'p') // property, value, tag
 	->add('email', 'test@test.com', 'p') // property, value, tag
 	// etc. etc.

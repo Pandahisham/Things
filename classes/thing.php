@@ -69,15 +69,17 @@ class Thing
 	 * Construct a new a Thing
 	 *
 	 * @param  string   $schema
+	 * @param  string   $tag
 	 * @param  string   $name
 	 * @param  string   $description
 	 * @param  string   $url
 	 * @param  string   $image
 	 */
 
-	function __construct($schema, $name, $description, $url, $image)
+	function __construct($schema, $tag, $name, $description, $url, $image)
 	{
 		$this->schema 		= $schema;
+		$this->tag 			= $tag;
 		$this->name 		= $name;
 		$this->description 	= $description;
 		$this->url 			= $url;
@@ -87,6 +89,8 @@ class Thing
 	/**
 	 * Make a new a Thing
 	 *
+	 * @param  string   $schema
+	 * @param  string   $tag
 	 * @param  string   $name
 	 * @param  string   $description
 	 * @param  string   $url
@@ -94,9 +98,9 @@ class Thing
 	 * @return Thing
 	 */
 	
-	static function make($schema = '', $name = '', $description = '', $url = '', $image = '')
+	static function make($schema = '', $tag = '', $name = '', $description = '', $url = '', $image = '')
 	{
-		return new Thing($schema, $name, $description, $url, $image);
+		return new Thing($schema, $tag, $name, $description, $url, $image);
 	}
 
 	/**
@@ -115,13 +119,13 @@ class Thing
 	/**
 	 * Renders the Thing
 	 *
-	 * @param  array  $properties
 	 * @return string
 	 */
 	function get()
 	{
 		$data = array(
 			'schema' => $this->schema,
+			'tag' => $this->tag,
 			'name' => $this->name,
 			'description' => $this->description,
 			'url' => $this->url,

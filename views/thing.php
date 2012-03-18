@@ -1,4 +1,4 @@
-<div class="<?php echo strtolower($schema); ?>" itemscope itemtype="http://schema.org/<?php echo $schema; ?>">
+<<?php echo $tag; ?> class="<?php echo strtolower($schema); ?>" itemscope itemtype="http://schema.org/<?php echo $schema; ?>">
 
 	<p>
 		<span itemprop="name"><?php echo $name; ?></span>
@@ -12,4 +12,4 @@
 	<?php echo $property->value; ?></<?php echo $property->tag; ?>>
 <?php endforeach; ?>	
 
-</div>
+</<?php echo $tag; ?>>

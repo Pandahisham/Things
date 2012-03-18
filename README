@@ -24,6 +24,16 @@ echo Things\Thing::make('Person', 'div') // schema and tag
         ->get(); // render html
 ?>
 
+OUTPUT"
+<div class="person" itemscope itemtype="http://schema.org/Person">
+    <p class="name" itemprop="name">John Doe</p>
+    <p class="description" itemprop="description">A great guy </p>
+    <p class="url" itemprop="http://john.com">http://john.com</p>
+    <p class="image" itemprop="image">john.jpg</p>
+    <p class="additionalName" itemprop="additionalName">Slowcheetah </p>
+</div>
+
+
 SCHEMAS:
 Creative Work: http://www.schema.org/CreativeWork
 Event: http://www.schema.org/Event

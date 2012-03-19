@@ -33,9 +33,6 @@ class Thing
 
 	public $tag = '';
 
-
-	public $properties = array();
-
 	/**
 	 * Construct a new a Thing
 	 *

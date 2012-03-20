@@ -64,6 +64,7 @@ class Thing
 	 *
 	 * @param  string   $property
 	 * @param  string   $value
+	 * @param  string   $tag
 	 * @return Thing
 	 */
 	function add($property = '', $value = '', $tag = '')

@@ -1,4 +1,4 @@
-Things - a semantic markup generator for Laravel (based on Schema.org)
+Things - a small semantic/microdata markup generator bundle for Laravel (based on Schema.org)
 
 EXAMPLE:
 <?php
